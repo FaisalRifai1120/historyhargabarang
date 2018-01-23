@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pgtk.ptka.historyhargabarang.MainActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="inputkodebarang"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cari"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="3dp" />
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_horizontal">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:stretchColumns="*">
+            <TableRow>
+                <TextView android:text="No."
+                    android:textStyle="bold"/>
+                <TextView android:text="Kode_Barang"
+                    android:textStyle="bold"/>
+                <TextView android:text="Nama_barang"
+                    android:textStyle="bold"/>
+                <TextView android:text="Satuan"
+                    android:textStyle="bold"/>
+            </TableRow>
+        </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</LinearLayout>
+</LinearLayout>
